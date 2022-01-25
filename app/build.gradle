@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+ext {
+    PUBLISH_GROUP_ID = 'com.applandeo'
+    PUBLISH_ARTIFACT_ID = 'material-calendar-view'
+    PUBLISH_VERSION = '1.9.0-rc03'
+}
+
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.moataz.salah.propertymanagement"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.android.support:appcompat-v7'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+
+    //circle pic
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.smarteist:autoimageslider:1.3.9-appcompat'
+
+    //retrofit2
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.7.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.12'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+    //glide for images
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.yanzhenjie:album:2.1.3'
+
+    //print
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.zxy.android:tiny:0.0.6'
+    implementation 'com.github.mazenrashed:Printooth:1.2.1'
+    implementation files('libs/posprinterconnectandsendsdk.jar')
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation 'com.github.zurche:plain-pie:v0.2.9'
+
+
+    //swipe
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+
+    //youtube player
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+
+    //calendar
+//    implementation 'com.applandeo:material-calendar-view:1.9.0-rc03'
+    implementation 'com.annimon:stream:1.2.1'
+
+    implementation 'androidx.biometric:biometric:1.1.0'
+
+    //grave charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation 'com.github.drawers:SpinnerDatePicker:2.0.1'
+
+}
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+repositories {
+    mavenCentral()
+}

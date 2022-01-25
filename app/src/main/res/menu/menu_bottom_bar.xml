@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:title=""
+        android:icon="@drawable/ic_iconly_light_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_user"
+        android:title=""
+        android:icon="@drawable/ic_iconly_light_outline_3_user"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_ticket"
+        android:title=""
+        android:icon="@drawable/ic_ticket"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_setting"
+        android:title=""
+        android:icon="@drawable/ic_iconly_light_setting"
+        app:showAsAction="ifRoom" />
+</menu>

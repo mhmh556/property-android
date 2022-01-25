@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/graphs_bt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabSelectedTextColor="@color/ddd">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annual" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/chart_viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_counter_bt"
+            app:layout_constraintEnd_toEndOf="@+id/graphs_bt"
+            app:layout_constraintStart_toStartOf="@+id/graphs_bt"
+            app:layout_constraintTop_toBottomOf="@+id/graphs_bt">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <Button
+            android:id="@+id/graphs_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/home_icon_shape"
+            android:drawableStart="@drawable/ic_icon_awesome_list_ul"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="@string/historical_status"
+            android:textAllCaps="false"
+            android:textColor="@color/ddd"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/chart_viewPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+        <Button
+            android:id="@+id/add_counter_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/add_invoice"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/chart_viewPager"
+            app:layout_constraintStart_toStartOf="@+id/chart_viewPager"
+            app:layout_constraintTop_toBottomOf="@+id/chart_viewPager" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout></layout>

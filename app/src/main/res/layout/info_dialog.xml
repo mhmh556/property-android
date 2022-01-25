@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:elevation="15dp"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ScrollViewSize">
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="User Details"
+                    android:textColor="@color/ddd"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/close_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_iconly_light_close_square"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_text"
+                    app:layout_constraintEnd_toStartOf="@+id/title_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/title_text" />
+
+                <TextView
+                    android:id="@+id/user_id_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user id"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/user_id" />
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_id_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+                <TextView
+                    android:id="@+id/user_full_name_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="user full name"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_full_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_id_tx"
+                    app:layout_constraintTop_toTopOf="@+id/user_full_name" />
+
+                <TextView
+                    android:id="@+id/user_full_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_full_name_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/user_id" />
+
+                <TextView
+                    android:id="@+id/user_mail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="user mail"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_mail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_name_tx"
+                    app:layout_constraintTop_toTopOf="@+id/user_mail" />
+
+                <TextView
+                    android:id="@+id/user_mail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_mail_text"
+                    app:layout_constraintTop_toBottomOf="@+id/user_full_name" />
+
+                <TextView
+                    android:id="@+id/user_phone_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user phone"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/user_phone" />
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_phone_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/user_mail" />
+
+                <TextView
+                    android:id="@+id/user_job_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user job"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_job"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_id_tx"
+                    app:layout_constraintTop_toTopOf="@+id/user_job" />
+
+                <TextView
+                    android:id="@+id/user_job"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_job_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+
+                <TextView
+                    android:id="@+id/city_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="city"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/city"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_name_tx"
+                    app:layout_constraintTop_toTopOf="@+id/city" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/city_text"
+                    app:layout_constraintTop_toBottomOf="@+id/user_job" />
+
+                <TextView
+                    android:id="@+id/user_national_id_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="user national id"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_national_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/user_national_id" />
+
+                <TextView
+                    android:id="@+id/user_national_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_national_id_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/city" />
+
+                <TextView
+                    android:id="@+id/user_api_key_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="user api key"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_api_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_id_tx"
+                    app:layout_constraintTop_toTopOf="@+id/user_api_key" />
+
+                <TextView
+                    android:id="@+id/user_api_key"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/user_api_key_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/user_national_id" />
+
+                <TextView
+                    android:id="@+id/second_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Application Details"
+                    android:textColor="@color/ddd"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_api_key" />
+
+                <TextView
+                    android:id="@+id/app_id_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="application id"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/app_id" />
+
+                <TextView
+                    android:id="@+id/app_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_id_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/second_title" />
+
+                <TextView
+                    android:id="@+id/app_name_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="application name"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_id_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_name" />
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_name_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_id" />
+
+
+                <TextView
+                    android:id="@+id/app_permission_created_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="app_permission_created"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_permission_created"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_name_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_permission_created" />
+
+                <TextView
+                    android:id="@+id/app_permission_created"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_permission_created_text"
+                    app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+
+                <TextView
+                    android:id="@+id/app_permission_updated_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="app_permission_updated"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_permission_updated"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_permission_created_text"
+                    app:layout_constraintTop_toTopOf="@+id/app_permission_updated" />
+
+                <TextView
+                    android:id="@+id/app_permission_updated"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_permission_updated_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_permission_created" />
+
+                <TextView
+                    android:id="@+id/app_activation_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="application activation"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_activation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_permission_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_activation" />
+
+                <CheckBox
+                    android:id="@+id/app_activation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_activation_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_permission_updated" />
+
+
+                <TextView
+                    android:id="@+id/app_api_key_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="application app api key"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_api_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_activation_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_api_key" />
+
+                <TextView
+                    android:id="@+id/app_api_key"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_api_key_text"
+                    app:layout_constraintTop_toBottomOf="@+id/app_activation" />
+
+
+                <TextView
+                    android:id="@+id/app_created_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="application created"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_created"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_api_key_text"
+                    app:layout_constraintTop_toTopOf="@+id/app_created" />
+
+                <TextView
+                    android:id="@+id/app_created"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_created_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_api_key" />
+
+                <TextView
+                    android:id="@+id/app_type_id_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="application type id"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_type_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_created_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_type_id" />
+
+                <TextView
+                    android:id="@+id/app_type_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_type_id_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_created" />
+
+                <TextView
+                    android:id="@+id/app_updated_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="application updated"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_updated"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_type_id_tx"
+                    app:layout_constraintTop_toTopOf="@+id/app_updated" />
+
+                <TextView
+                    android:id="@+id/app_updated"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="application id"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_type_id" />
+
+                <TextView
+                    android:id="@+id/cleaning_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cleaning add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cleaning_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/cleaning_add_check" />
+
+                <CheckBox
+                    android:id="@+id/cleaning_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/app_updated" />
+
+                <TextView
+                    android:id="@+id/cleaning_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cleaning delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cleaning_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/cleaning_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/cleaning_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/cleaning_add_check" />
+
+                <TextView
+                    android:id="@+id/cleaning_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cleaning edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cleaning_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/cleaning_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/cleaning_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/cleaning_delete_check" />
+
+                <TextView
+                    android:id="@+id/cleaning_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cleaning view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cleaning_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/cleaning_view_check" />
+
+                <CheckBox
+                    android:id="@+id/cleaning_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cleaning_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/cleaning_edit_check" />
+
+                <TextView
+                    android:id="@+id/custmers_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custmers add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/custmers_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/custmers_add_check" />
+
+                <CheckBox
+                    android:id="@+id/custmers_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/cleaning_view_check" />
+
+                <TextView
+                    android:id="@+id/custmers_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custmers delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/custmers_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/custmers_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/custmers_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/custmers_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/custmers_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/custmers_add_check" />
+
+                <TextView
+                    android:id="@+id/custmers_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custmers edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/custmers_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/custmers_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/custmers_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/custmers_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/custmers_delete_check" />
+
+                <TextView
+                    android:id="@+id/custmers_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custmers view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/custmer_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/custmer_view_check" />
+
+                <CheckBox
+                    android:id="@+id/custmer_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/custmers_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/custmers_edit_check" />
+
+                <TextView
+                    android:id="@+id/reservation_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reservation add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reservation_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/reservation_add_check" />
+
+                <CheckBox
+                    android:id="@+id/reservation_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/reservation_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/custmer_view_check" />
+
+                <TextView
+                    android:id="@+id/reservation_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reservation delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reservation_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/reservation_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/reservation_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/reservation_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/reservation_add_check" />
+
+                <TextView
+                    android:id="@+id/reservation_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reservation edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reservation_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/reservation_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/reservation_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/reservation_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/reservation_delete_check" />
+
+                <TextView
+                    android:id="@+id/reservation_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reservation view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/reservation_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/reservation_view_check" />
+
+                <CheckBox
+                    android:id="@+id/reservation_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/reservation_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/reservation_edit_check" />
+
+                <TextView
+                    android:id="@+id/purchase_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="purchase add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/purchase_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/purchase_add_check" />
+
+                <CheckBox
+                    android:id="@+id/purchase_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/purchase_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/reservation_view_check" />
+
+                <TextView
+                    android:id="@+id/purchase_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="purchase delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/purchase_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/purchase_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/purchase_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/purchase_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/purchase_add_check" />
+
+                <TextView
+                    android:id="@+id/purchase_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="purchase edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/purchase_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/purchase_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/purchase_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/purchase_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/purchase_delete_check" />
+
+                <TextView
+                    android:id="@+id/purchase_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="purchase view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/purchase_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/purchase_view_check" />
+
+                <CheckBox
+                    android:id="@+id/purchase_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/purchase_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/purchase_edit_check" />
+
+                <TextView
+                    android:id="@+id/device_meter_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="device meter add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/device_meter_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/device_meter_add_check" />
+
+                <CheckBox
+                    android:id="@+id/device_meter_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/device_meter_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/purchase_view_check" />
+
+                <TextView
+                    android:id="@+id/device_meter_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="device meter delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/device_meter_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/device_meter_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/device_meter_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/device_meter_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/device_meter_add_check" />
+
+                <TextView
+                    android:id="@+id/device_meter_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="device meter edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/device_meter_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/device_meter_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/device_meter_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/device_meter_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/device_meter_delete_check" />
+
+                <TextView
+                    android:id="@+id/device_meter_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="device meter view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/device_meter_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/device_meter_view_check" />
+
+                <CheckBox
+                    android:id="@+id/device_meter_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/device_meter_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/device_meter_edit_check" />
+
+                <TextView
+                    android:id="@+id/customer_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customer add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/customer_add_check" />
+
+                <CheckBox
+                    android:id="@+id/customer_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/customer_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/device_meter_view_check" />
+
+                <TextView
+                    android:id="@+id/customer_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customer delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/customer_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/customer_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/customer_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/customer_add_check" />
+
+                <TextView
+                    android:id="@+id/customer_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customer edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/customer_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/customer_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/customer_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/customer_delete_check" />
+
+                <TextView
+                    android:id="@+id/customer_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customer view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/customer_view_check" />
+
+                <CheckBox
+                    android:id="@+id/customer_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/customer_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/customer_edit_check" />
+
+                <TextView
+                    android:id="@+id/property_add_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="property add"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/property_add_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/property_add_check" />
+
+                <CheckBox
+                    android:id="@+id/property_add_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/property_add_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/customer_view_check" />
+
+                <TextView
+                    android:id="@+id/property_delete_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="property delete"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/property_delete_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_add_tx"
+                    app:layout_constraintTop_toTopOf="@+id/property_delete_check" />
+
+                <CheckBox
+                    android:id="@+id/property_delete_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/property_delete_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/property_add_check" />
+
+                <TextView
+                    android:id="@+id/property_edit_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="property edit"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/property_edit_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_delete_tx"
+                    app:layout_constraintTop_toTopOf="@+id/property_edit_check" />
+
+                <CheckBox
+                    android:id="@+id/property_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/property_edit_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/property_delete_check" />
+
+                <TextView
+                    android:id="@+id/property_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="property view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/property_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cleaning_edit_tx"
+                    app:layout_constraintTop_toTopOf="@+id/property_view_check" />
+
+                <CheckBox
+                    android:id="@+id/property_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/property_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/property_edit_check" />
+
+                <TextView
+                    android:id="@+id/report_view_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="report view"
+                    android:textColor="@color/ddd"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/report_view_check"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/app_updated_tx"
+                    app:layout_constraintTop_toTopOf="@+id/report_view_check" />
+
+                <CheckBox
+                    android:id="@+id/report_view_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/report_view_tx"
+                    app:layout_constraintTop_toBottomOf="@+id/property_view_check" />
+
+                <View
+                    android:id="@+id/divider14"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/second_title"
+                    app:layout_constraintEnd_toStartOf="@+id/second_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/second_title" />
+
+                <View
+                    android:id="@+id/divider15"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/second_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/second_title"
+                    app:layout_constraintTop_toTopOf="@+id/second_title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/loader"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

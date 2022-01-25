@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+    <!--Swipe Layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtEdit"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="#C7C7CB"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="#FF3C30"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/gray"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/the_counter"
+            android:textColor="@color/ddd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/account"
+            app:layout_constraintEnd_toStartOf="@+id/divider10"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+        <TextView
+            android:id="@+id/counter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/counter"
+            app:layout_constraintEnd_toStartOf="@+id/divider10"
+            app:layout_constraintStart_toEndOf="@+id/counter"
+            app:layout_constraintTop_toTopOf="@+id/counter" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/account"
+            android:textColor="@color/ddd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="@+id/counter"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/counter"
+            app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+        <TextView
+            android:id="@+id/account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55DF4"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/account"
+            app:layout_constraintEnd_toEndOf="@+id/counter_text"
+            app:layout_constraintStart_toStartOf="@+id/counter_text"
+            app:layout_constraintTop_toTopOf="@+id/account" />
+
+        <TextView
+            android:id="@+id/flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/flat"
+            android:textColor="@color/ddd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/coast"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+
+        <TextView
+            android:id="@+id/flat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toEndOf="@+id/flat"
+            app:layout_constraintBottom_toBottomOf="@+id/flat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/flat" />
+
+        <TextView
+            android:id="@+id/coast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/the_cost"
+            android:textColor="@color/ddd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider10"
+            app:layout_constraintEnd_toEndOf="@+id/flat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/flat"
+            app:layout_constraintTop_toBottomOf="@+id/flat" />
+
+        <TextView
+            android:id="@+id/coast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/coast"
+            app:layout_constraintEnd_toEndOf="@+id/flat_text"
+            app:layout_constraintStart_toStartOf="@+id/flat_text"
+            app:layout_constraintTop_toTopOf="@+id/coast" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</layout>

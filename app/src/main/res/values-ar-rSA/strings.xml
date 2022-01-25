@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Property management</string>
+
+    //home screen
+    <string name="vacant">الشاغرة</string>
+    <string name="unpaid_reservation">حجز غير مسدد</string>
+    <string name="reserved">المحجوزة</string>
+    <string name="month_bookings_movement">حركة حجوزات الشهر</string>
+    <string name="all">الكل</string>
+    <string name="entry">دخول</string>
+    <string name="leaving">مغادرة</string>
+    <string name="month_expenses">مصروفات الشهر</string>
+    <string name="the_public">العامة</string>
+    <string name="electricity">كهرباء</string>
+    <string name="water">الماء</string>
+
+    //menu items
+    <string name="counters">العدادات</string>
+    <string name="reserved_apartments">الشقق المحجوزة</string>
+    <string name="vacant_apartments">الشقق الشاغرة</string>
+    <string name="cleaning_appointments">مواعيد التنضيف</string>
+    <string name="about_us">من نحن</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="policies_and_services">السياسات والخدمات</string>
+    <string name="sign_out">تسجيل الخروج</string>
+
+    //vacant screen
+    <string name="new_apartment">شقة جديدة</string>
+    <string name="flat_30">شقة - </string>
+    <string name="the_details">التفاصيل</string>
+    <string name="price">السعر</string>
+    <string name="day">يوم \n 100$</string>
+    <string name="week">اسبوع \n 600$</string>
+    <string name="month">شهر \n 2000$</string>
+    <string name="reserved_days">الأيام المحجوزة</string>
+    <string name="from">من</string>
+    <string name="to">الي</string>
+    <string name="sun_2_may_2021">الأحد  2/مايو/2021</string>
+
+    //reservation screen
+    <string name="for_reservations">للحجز</string>
+    <string name="client_name">اسم الزبون</string>
+    <string name="booking_type">نوع الحجز</string>
+    <string name="daily">يومي</string>
+    <string name="weekly">أسبوعي</string>
+    <string name="monthly">شهري</string>
+    <string name="_100">100$</string>
+    <string name="_650">650$</string>
+    <string name="_2000">2000$</string>
+    <string name="the_number_of_people">عدد الأشخاص</string>
+    <string name="booking_date">تأريخ الحجز</string>
+    <string name="leaving_date">تاريخ المغادرة</string>
+    <string name="reservation">حجز</string>
+    <string name="customers">العملاء</string>
+    <string name="tit">حجز شقة رقم20 </string>
+
+    // new customer screen
+    <string name="name">الاسم</string>
+    <string name="phone">الجوال</string>
+    <string name="id_number">رقم الهوية</string>
+    <string name="date_of_birth">تأريخ الميلاد</string>
+    <string name="id_photo">صورة الهوية</string>
+    <string name="add">إضافة</string>
+    <string name="new_customer">زبون جديد</string>
+    <string name="edit_customer">تعديل زبون</string>
+
+    // code screen
+    <string name="activation_code">كود التفعيل</string>
+    <string name="activate">تفعيل</string>
+
+    // login flow screens
+    <string name="forgot_your_password">نسيت كلمة المرور</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="forgot_user_name">نسيت اسم المستخدم ؟</string>
+    <string name="forgot_user_name_tex">نسيت اسم المستخدم</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="username_or_phone_number">اسم المستخدم او رقم الهاتف</string>
+    <string name="password">كلمة السر</string>
+    <string name="are_you_a_new_user">هل انت مستخدم جديد؟</string>
+    <string name="create_an_account">انشاء حساب</string>
+    <string name="re_password">تكرار كلمة السر</string>
+    <string name="register">تسجيل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="send">ارسال</string>
+    <string name="e_mail">الايميل</string>
+    <string name="full_name">الاسم كامل</string>
+    <string name="you_can_use_another_action_to_login_like">يمكنك تسجيل الدخول عن طريق احدي هذه الطرق</string>
+    <string name="not_now">ليس الان</string>
+    <string name="error">خطأ</string>
+    <string name="ok">حسنا</string>
+    <string name="wrong">خطاء بإسم المستخدم او كلمة المرور</string>
+
+    // add new flat screen
+    <string name="upload_photo">تحميل الصور</string>
+    <string name="apartment_content">محتوى الشقة</string>
+    <string name="number">عدد</string>
+    <string name="rooms">غرف</string>
+    <string name="bathroom">حمام</string>
+    <string name="hall">صالة</string>
+    <string name="kitchen">مطبخ</string>
+    <string name="apartment_rating">تصنيف الشقة</string>
+    <string name="apartment_number">رقم الشقة</string>
+    <string name="apartment_area_square_meters">مساحة الشقة (متر مربع)</string>
+    <string name="daily_price">السعر اليومي</string>
+    <string name="weekly_price">السعر الأسبوعي</string>
+    <string name="monthly_price">السعر الشهري</string>
+    <string name="delete">حذف</string>
+    <string name="new_flat">شقة جديدة</string>
+    <string name="new_rating">تصنيف جديد</string>
+    <string name="update_rating">تعديل تصنيف</string>
+    <string name="category">التصنيف</string>
+    <string name="update">تعديل</string>
+    <string name="cancel">الغاء</string>
+    <string name="are_you_want_delete_flat_30">هل تريد حذف شقة - 30</string>
+    <string name="are_you_want_delete_product">هل تريد حذف هذا المنتج</string>
+    <string name="are_you_want_delete_customer">هل تريد حذف هذا الزبون</string>
+    <string name="delete_flat">حذف شقة</string>
+    <string name="extend_the_booking">تمديد الحجز</string>
+    <string name="previous">السابقة</string>
+
+
+    <string name="ckeck_out">تسجيل الخروج</string>
+    <string name="expand_date">تمديد تاريخ المغادرة</string>
+    <string name="expand">تمديد</string>
+    <string name="graphs">الرسوم البيانية</string>
+    <string name="add_counter">اضافة عداد</string>
+    <string name="the_counter">العداد</string>
+    <string name="account">الحساب</string>
+    <string name="flat">الشقة</string>
+    <string name="the_cost">التكلفة</string>
+    <string name="label">قيمة الاستهلاك الشهري : 100</string>
+    <string name="historical_status">الحالة التأريخية</string>
+    <string name="add_invoice">إضافة فاتورة</string>
+
+
+    <string name="other">اخري</string>
+    <string name="general_expenses">المصروفات العامة</string>
+    <string name="annual">سنوية</string>
+    <string name="counter_5">عداد رقم 5</string>
+    <string name="account_number">رقم الحساب</string>
+    <string name="address">العنوان</string>
+    <string name="apartments_connected_to_the_meter">الشقق المرتبطة بالعداد</string>
+    <string name="apartments">الشقق :</string>
+    <string name="click_to_choose_the_apartments_connected_to_this_meter">اضغط لتختار الشقق المتربطة بهذا العداد</string>
+    <string name="number_tx">رقم</string>
+    <string name="the_previous_reading">القراءة السابقة</string>
+    <string name="current_reading">القراءة الحالية</string>
+    <string name="invoice_date">تأريخ الفاتورة</string>
+    <string name="kilowatt">)كيلو وات(</string>
+    <string name="sar">)ر.س(</string>
+
+    <string name="electric_meter">عداد كهرباء</string>
+    <string name="water_meter">عداد ماء</string>
+    <string name="new_electricity_bill">فاتورة كهرباء جديدة</string>
+    <string name="new_water_bill">فاتورة ماء جديدة</string>
+    <string name="new_price">سعر جديد</string>
+    <string name="price_type">نوع السعر</string>
+    <string name="price_value">قيمة السعر</string>
+    <string name="new_booking_type">نوع حجز جديد</string>
+    <string name="update_booking_type">تحديث نوع الحجز</string>
+    <string name="floor">الطابق</string>
+    <string name="booking_price">سعر الحجز</string>
+    <string name="debit_card_digital_card"> (debit card) بطاقة رقمية</string>
+    <string name="credit_card">credit card</string>
+    <string name="debit_card">debit card</string>
+    <string name="paiement_when_recieving">الدفع عند الاستلام</string>
+    <string name="products">منتجات</string>
+    <string name="quantity">الكمية</string>
+    <string name="sale_price">سعر البيع</string>
+    <string name="product_pic">صورة المنتج</string>
+    <string name="add_product">اضافة منتجات</string>
+    <string name="edit_product">تعديل منتجات</string>
+    <string name="edit">تعديل</string>
+    <string name="device_number">رقم الجهاز</string>
+    <string name="staff_management">Staff management</string>
+    <string name="employee">موظف</string>
+    <string name="next">التالي</string>
+    <string name="new_employee">موظف جديد</string>
+    <string name="job">الوظيفة</string>
+    <string name="api_key">api_key</string>
+    <string name="review">استعراض</string>
+    <string name="user_activation">تفعيل المستخدم</string>
+    <string name="save">حفظ</string>
+    <string name="property">منشأه</string>
+    <string name="cleaning">التنظيف</string>
+    <string name="purchase">مشتريات</string>
+    <string name="report">ابلاغ</string>
+    <string name="info">Info</string>
+    <string name="device_meter">العداد</string>
+    <string name="custmer">عميل</string>
+    <string name="national_num">national num</string>
+    <string name="scheduled">scheduled</string>
+    <string name="done">done</string>
+    <string name="tasks_of_the_month">Tasks of the month</string>
+    <string name="new_task">مهمة جديدة</string>
+    <string name="min">دقيقة</string>
+    <string name="administrator">Administrator</string>
+    <string name="task">مهمة</string>
+    <string name="duration">Duration</string>
+    <string name="start_time_min">وقت البدا</string>
+    <string name="starting_date">تاريخ البدا</string>
+    <string name="add_task">اضافة مهمة</string>
+    <string name="tasks">مهام</string>
+    <string name="update_task">تحديث مهمة</string>
+    <string name="task_name">اسم المهمة</string>
+    <string name="are_you_want_delete_this_task">هل تريد حذف هذه المهمة</string>
+    <string name="new_bill">فاتورة جديدة</string>
+    <string name="the_total">الاجمالي</string>
+    <string name="bill_image">صورة الفاتورة</string>
+    <string name="print">اطبع</string>
+    <string name="are_you_want_delete_this_bill">هل تريد حذف هذه الفاتورة</string>
+    <string name="new_message">رسالة جديدة</string>
+    <string name="customers_service">خدمة الملاء</string>
+    <string name="reports">البلاغات</string>
+    <string name="type">نوع</string>
+    <string name="title">عنوان</string>
+    <string name="are_you_want_delete_this_item">هل تود حذف هذا العنصر</string>
+    <string name="add_type">اضافة نوع</string>
+    <string name="type_name">اسم النوع</string>
+    <string name="update_type">تحديث النوع</string>
+    <string name="contact_type">نوع التواصل</string>
+    <string name="delete_type_message">هل تود حذف هذا النوع</string>
+    <string name="the_meters">العدادات</string>
+    <string name="acc_num">acc num</string>
+    <string name="electricity_bill_multiplication_rate">Electricity bill multiplication rate</string>
+    <string name="add_app">اضافة تطبيق</string>
+    <string name="user">مستخدم</string>
+    <string name="invoice_for_booked_apartments">Invoice for booked apartments</string>
+    <string name="the_date">التاريخ</string>
+    <string name="none_ble_device">لا يوجد اجهزة</string>
+    <string name="printers">الطابعات</string>
+    <string name="new_printer">طابعة جديدة</string>
+    <string name="add_printer">اضافة طابعة</string>
+    <string name="search">بحث</string>
+    <string name="a4">ِA4</string>
+    <string name="_80_m">80 M</string>
+    <string name="print_size">حجم الطباعة</string>
+    <string name="days">ايام</string>
+    <string name="edit_employee">تحديث موظف</string>
+    <string name="electricity_bill_multiplier">معامل ضرب فاتورة الكهرباء</string>
+    <string name="no_records_yet">لا يوجد سجلات بعد</string>
+    <string name="task_of_month">مهام الشهر</string>
+
+
+    <string-array name="month">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>ابريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>اغسطس</item>
+        <item>سبتمبر</item>
+        <item>اكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+</resources>

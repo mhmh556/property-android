@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_margin="2dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!--Swipe Layout-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/txtEdit"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/edit_bt"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/edit"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/txtDelete"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/delete_bt"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/delete"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray">
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="3dp"
+                android:text="@string/the_counter"
+                android:textColor="@color/ddd"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/price_text"
+                app:layout_constraintEnd_toStartOf="@+id/divider10"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider10"
+                app:drawableStartCompat="@drawable/ic_iconly_light_profile" />
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="3dp"
+                android:text="30"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/divider10"
+                app:layout_constraintEnd_toEndOf="@+id/name_text"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/name_text"
+                app:layout_constraintTop_toBottomOf="@+id/name_text"
+                app:drawableStartCompat="@drawable/ic_icon_awesome_money_bill_wave_alt" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="3dp"
+                android:text="01011455258"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/date_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toEndOf="@+id/divider10"
+                app:layout_constraintTop_toTopOf="@+id/divider10"
+                app:drawableStartCompat="@drawable/ic_iconly_light_outline_ticket" />
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="26/05/2021"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:drawablePadding="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/divider10"
+                app:layout_constraintEnd_toEndOf="@+id/phone_number"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number"
+                app:drawableStartCompat="@drawable/ic_iconly_light_calendar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</layout>

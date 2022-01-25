@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:elevation="15dp"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/new_booking_type"
+            android:textColor="#717171"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/price_type_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_iconly_light_close_square"
+            app:layout_constraintBottom_toBottomOf="@+id/title_text"
+            app:layout_constraintEnd_toStartOf="@+id/title_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/price_value_input"
+            app:layout_constraintTop_toTopOf="@+id/title_text" />
+
+        <TextView
+            android:id="@+id/price_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/price_type"
+            app:layout_constraintBottom_toTopOf="@+id/price_type_input"
+            app:layout_constraintEnd_toEndOf="@+id/price_type_input"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/price_type_input"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <EditText
+            android:id="@+id/price_type_input"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/search_shape"
+            app:layout_constraintBottom_toTopOf="@+id/price_value_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_type_text" />
+
+        <TextView
+            android:id="@+id/price_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/price_value"
+            app:layout_constraintBottom_toTopOf="@+id/price_value_input"
+            app:layout_constraintEnd_toEndOf="@+id/price_value_input"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/price_value_input"
+            app:layout_constraintTop_toBottomOf="@+id/price_type_input" />
+
+        <EditText
+            android:id="@+id/price_value_input"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/search_shape"
+            app:layout_constraintBottom_toTopOf="@+id/add_bt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_value_text" />
+
+        <Button
+            android:id="@+id/add_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/price_value_input"
+            app:layout_constraintStart_toStartOf="@+id/price_value_input"
+            app:layout_constraintTop_toBottomOf="@+id/price_value_input" />
+
+        <ProgressBar
+            android:id="@+id/loader"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

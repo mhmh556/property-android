@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--    <group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/nav_counters"
+            android:icon="@drawable/ic_speedometer_counter"
+            android:title="@string/counters" />
+
+        <item
+            android:id="@+id/nav_reserved_apartments"
+            android:icon="@drawable/ic_icon_awesome_building"
+            android:title="@string/reserved_apartments" />
+
+        <item
+            android:id="@+id/nav_vacant_apartments"
+            android:icon="@drawable/ic_icon_awesome_building"
+            android:title="@string/vacant_apartments" />
+
+        <item
+            android:id="@+id/nav_employees_apartments"
+            android:icon="@drawable/ic_icon_awesome_building"
+            android:title="@string/staff_management" />
+
+        <item
+            android:id="@+id/nav_printer"
+            android:icon="@drawable/ic_print"
+            android:title="@string/printers" />
+
+        <item
+            android:id="@+id/nav_expenses_appointments"
+            android:icon="@drawable/ic_icon_clean"
+            android:title="@string/general_expenses" />
+
+        <item
+            android:id="@+id/nav_cleaning_appointments"
+            android:icon="@drawable/ic_icon_clean"
+            android:title="@string/cleaning_appointments" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_icon_about_us"
+            android:title="@string/about_us" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_icon_contact_us"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/nav_policies_and_services"
+            android:icon="@drawable/ic_icon_ionic_ios_paper"
+            android:title="@string/policies_and_services" />
+
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_icon_logout"
+            android:title="@string/sign_out" />
+
+<!--    </group>-->
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item
+                android:gravity="center"
+                android:drawable="@drawable/ic_edit_bg">
+            </item>
+            <item
+                android:gravity="center"
+                android:drawable="@drawable/ic_iconly_light_outline_edit">
+            </item>
+        </layer-list>
+    </item>
+</selector>

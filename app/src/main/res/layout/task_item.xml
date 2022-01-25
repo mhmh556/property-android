@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_margin="2dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!--Swipe Layout-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/txtEdit"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/edit_bt"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/edit"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/txtDelete"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/delete_bt"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/delete"/>
+
+        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray">
+
+                <View
+                    android:id="@+id/divider10"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/the_counter"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:drawablePadding="3dp"
+                    android:drawableStart="@drawable/ic_baseline_assignment_24"
+                    app:layout_constraintBottom_toTopOf="@+id/counter_text"
+                    app:layout_constraintEnd_toStartOf="@+id/divider10"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+                <TextView
+                    android:id="@+id/counter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mohamed ali saeed"
+                    android:textColor="@color/ddd"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/account"
+                    app:layout_constraintEnd_toStartOf="@+id/divider10"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="@+id/counter"
+                    app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="30"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:drawablePadding="3dp"
+                    android:drawableStart="@drawable/ic_timer"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider10"
+                    app:layout_constraintEnd_toEndOf="@+id/counter"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/counter"
+                    app:layout_constraintTop_toBottomOf="@+id/counter_text" />
+
+                <TextView
+                    android:id="@+id/flat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableStart="@drawable/ic_access_time"
+                    android:drawablePadding="3dp"
+                    android:text="09 : 30 am"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/coast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toEndOf="@+id/divider10"
+                    app:layout_constraintTop_toTopOf="@+id/divider10" />
+
+
+                <TextView
+                    android:id="@+id/coast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="26/05/2021"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:drawablePadding="3dp"
+                    android:drawableStart="@drawable/ic_iconly_light_calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider10"
+                    app:layout_constraintEnd_toEndOf="@+id/flat"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/flat"
+                    app:layout_constraintTop_toBottomOf="@+id/flat" />
+
+                <TextView
+                    android:id="@+id/coast_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/account"
+                    app:layout_constraintEnd_toStartOf="@+id/divider10"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toEndOf="@+id/account"
+                    app:layout_constraintTop_toTopOf="@+id/account" />
+
+                <TextView
+                    android:id="@+id/counter2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_assignment_24"
+                    android:drawablePadding="3dp"
+                    android:text="@string/the_counter"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/coast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/coast"
+                    app:layout_constraintTop_toTopOf="@+id/coast" />
+
+                <TextView
+                    android:id="@+id/statue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/ic_delete_bg"
+                    android:text="pending"
+                    android:textColor="#CBF12424"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/flat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/flat"
+                    app:layout_constraintTop_toTopOf="@+id/flat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</layout>

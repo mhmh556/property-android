@@ -1,0 +1,30 @@
+package com.moataz.salah.propertymanagement.model.contactType;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+import java.util.List;
+
+public class ContactTypeResponse {
+    @SerializedName("data")
+    @Expose
+    private List<ContactTypeModel> data = null;
+    @SerializedName("message")
+    @Expose
+    private String message;
+
+    public List<ContactTypeModel> getData() {
+        return data;
+    }
+
+    public void setData(List<ContactTypeModel> data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}

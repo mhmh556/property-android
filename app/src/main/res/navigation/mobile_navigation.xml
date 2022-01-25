@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login_fragment">
+
+    <fragment
+        android:id="@+id/nav_home_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/home_fragment"/>
+    <fragment
+        android:id="@+id/nav_vacant_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.vacant.VacantFragment"
+        android:label=""
+        tools:layout="@layout/vacant_fragemnt"/>
+    <fragment
+        android:id="@+id/nav_reserved_apartments_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.reservedApartments.ReservedApartmentsFragment"
+        android:label="@string/reserved_apartments"
+        tools:layout="@layout/vacant_fragemnt"/>
+    <fragment
+        android:id="@+id/nav_vacant_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.details.VacantDetailsFragment"
+        android:label="@string/flat_30"
+        tools:layout="@layout/vacant_details_fragment"/>
+    <fragment
+        android:id="@+id/nav_reservation_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.reserve.ReservationFragment"
+        android:label="@string/tit"
+        tools:layout="@layout/reservation_fragment2"/>
+    <fragment
+        android:id="@+id/nav_add_customer_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addCustomer.AddCustomerFragment"
+        android:label="@string/new_customer"
+        tools:layout="@layout/add_customer_fragment"/>
+    <fragment
+        android:id="@+id/nav_code_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.code.CodeFragment"
+        android:label=""
+        tools:layout="@layout/activity_code" />
+    <fragment
+        android:id="@+id/nav_sign_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.sign.SignFragment"
+        android:label=""
+        tools:layout="@layout/activity_sign" />
+    <fragment
+        android:id="@+id/nav_login_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.login.LoginFragment"
+        android:label=""
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/nav_forget_name_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.forgetName.ForgetNameFragment"
+        android:label=""
+        tools:layout="@layout/activity_forget_user_name" />
+    <fragment
+        android:id="@+id/nav_forget_pass_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.forgetPass.ForgetPassFragment"
+        android:label=""
+        tools:layout="@layout/activity_forget_password" />
+    <fragment
+        android:id="@+id/nav_add_new_flat_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addNewFlat.AddNewFlatFragment"
+        android:label="@string/new_flat"
+        tools:layout="@layout/add_new_flat_fragment" />
+    <fragment
+        android:id="@+id/nav_add_new_price_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addPrice.AddPriceFragment"
+        android:label="@string/new_price"
+        tools:layout="@layout/add_price_fragment" />
+    <fragment
+        android:id="@+id/nav_reserved_apartments_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.reservedApartmentsDetails.ReservedApartmentsDetailsFragment"
+        android:label="@string/flat_30"
+        tools:layout="@layout/reserved_apartments_details_fragment"/>
+    <fragment
+        android:id="@+id/nav_counters_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.counter.CounterFragment"
+        android:label="@string/counters"
+        tools:layout="@layout/counter_fragment"/>
+    <fragment
+        android:id="@+id/nav_chart_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.chart.ChartFragment"
+        android:label="@string/counters"
+        tools:layout="@layout/chart_fragment"/>
+    <fragment
+        android:id="@+id/nav_general_expenses_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.generalExpenses.GeneralExpensesFragment"
+        android:label="@string/general_expenses"
+        tools:layout="@layout/expenses_fragment"/>
+    <fragment
+        android:id="@+id/nav_counter_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.counterDetails.CounterDetailsFragment"
+        android:label="@string/counter_5"
+        tools:layout="@layout/counter_details_fragment"/>
+    <fragment
+        android:id="@+id/nav_chart_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.chartDetails.ChartDetailsFragment"
+        android:label="@string/counter_5"
+        tools:layout="@layout/chart_details_fragment"/>
+    <fragment
+        android:id="@+id/nav_add_counter_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addCounter.AddCounterFragment"
+        android:label="@string/add_counter"
+        tools:layout="@layout/add_counter_fragment"/>
+    <fragment
+        android:id="@+id/nav_add_bill_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addBill.AddBillFragment"
+        android:label="@string/add_invoice"
+        tools:layout="@layout/add_bill_fragment"/>
+    <fragment
+        android:id="@+id/nav_app_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.application.ApplicationFragment"
+        android:label="@string/add_invoice"
+        tools:layout="@layout/app_fragment"/>
+    <fragment
+        android:id="@+id/nav_products_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.products.ProductsFragment"
+        android:label="@string/products"
+        tools:layout="@layout/products_fragment"/>
+    <fragment
+        android:id="@+id/nav_add_product_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addProduct.AddProductFragment"
+        android:label="@string/add_product"
+        tools:layout="@layout/add_product_fragment"/>
+    <fragment
+        android:id="@+id/nav_customer_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.customer.CustomerFragment"
+        android:label="@string/customers"
+        tools:layout="@layout/customer_fragment"/>
+    <fragment
+        android:id="@+id/nav_employees_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.staff.StaffFragment"
+        android:label="@string/employee"
+        tools:layout="@layout/staff_fragment"/>
+    <fragment
+        android:id="@+id/nav_add_employees_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addEmployee.AddEmployeeFragment"
+        android:label="@string/new_employee"
+        tools:layout="@layout/add_employee_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_permission_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.permission.PermissionFragment"
+        android:label="Employee Permission"
+        tools:layout="@layout/permission_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_task_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.task.TaskFragment"
+        android:label="@string/task_of_month"
+        tools:layout="@layout/tasks_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_add_task_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addTask.AddTaskFragment"
+        android:label=""
+        tools:layout="@layout/add_task_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_add_expense_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addExpenses.AddExpensesBillFragment"
+        android:label=""
+        tools:layout="@layout/add_expenses_bill_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_expense_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.expenseDetails.ExpenseDetailsFragment"
+        android:label=""
+        tools:layout="@layout/expenses_details_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_contact_us_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.contactUs.ContactUsFragment"
+        android:label=""
+        tools:layout="@layout/contact_us_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_add_contact_us_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.addContactUs.AddContactUsFragment"
+        android:label=""
+        tools:layout="@layout/add_contact_us_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_contact_us_details_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.contactUsDetails.ContactUsDetailsFragment"
+        android:label=""
+        tools:layout="@layout/contact_us_details"/>
+
+    <fragment
+        android:id="@+id/nav_print_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.print.PrintFragment"
+        android:label=""
+        tools:layout="@layout/print_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_reserved_flat_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.reservedFlat.ReservedFlatFragment"
+        android:label="@string/reserved_apartments"
+        tools:layout="@layout/reserved_flat_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_printer_fragment"
+        android:name="com.moataz.salah.propertymanagement.ui.printer.PrinterFragment"
+        android:label="@string/printers"
+        tools:layout="@layout/printer_fragment"/>
+
+</navigation>
